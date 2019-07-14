@@ -1,0 +1,104 @@
+body {
+  padding-top: 2rem;
+  color: white;
+  background-color: #333333;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.separator {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 0;
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.separator--dotter {
+  border: 0;
+  border-bottom: 4px dotted #fcd538;
+  width: 0;
+  animation: separator-width 1s ease-out forwards;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding-left: 2rem;
+}
+
+.container-fluid a {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+#archive {
+  color: #fcd538;
+  margin-top: 3rem;
+}
+
+.tasks, .documents {
+  padding-top: 3rem;
+}
+
+.tasks p, .documents p {
+  font-size: 1.3rem;
+}
+
+.tasks span {
+  font-size: 1.1rem;
+  margin-left: 0.3rem;
+}
+
+.tasks object {
+  margin-top: 1rem;
+}
+
+.documents ol {
+  color: #fcd538;
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: Georgia;
+}
+
+.documents ol > li > a {
+  font-size: 1.3rem;
+  font-style: normal;
+  line-height: 4rem;
+}
+
+#wrapper {
+  position: relative;
+  width: 93%;
+  margin: auto;
+  vertical-align: middle;
+}
+
+#ar_one {
+  border-radius: 20px;
+  margin-top: 2.2rem;
+  padding: 2rem;
+  background-color: #564c43;
+}
+
+#ar_sec {
+  border-radius: 20px;
+  margin-top: 2.2rem;
+  padding: 2rem;
+  background-color: #434b56;
+}
+
+/*# sourceMappingURL=home.css.map */
