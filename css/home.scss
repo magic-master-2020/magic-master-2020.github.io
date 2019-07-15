@@ -1,22 +1,36 @@
-body
-{
-    padding-top: 2rem;
-    color: white;
-    background-color: #333333;
-}
-
-.title
-{
-    font-size: 2rem;
-    text-align: center;
-    line-height: 3rem;
-}
+$background-color: #333333;
+$main-text-color: white;
+$title-font-size: 2rem;
+$subtitle-font-size: 1.4rem;
 
 $separator-size: 4px;
 $separator-border-style: solid;
 $separator-border-color: #fcd538;
 $separator-space-top: 3rem;
 $separator-space-bottom: 3rem;
+
+body
+{
+    padding-top: 2rem;
+    color: $main-text-color;
+    background-color: $background-color;
+}
+
+.humble
+{
+    padding-top: 3rem;
+    border: none;
+    border-bottom: 3px solid #888888;
+    width: 80%;
+    margin: auto;
+}
+
+.title
+{
+    font-size: $title-font-size;
+    line-height: 3rem;
+    text-align: center;
+}
 
 .separator
 {
@@ -34,7 +48,6 @@ $separator-space-bottom: 3rem;
 @mixin dot
 {
     $dot-size: 5px;
-    content: "";
     background-color: $separator-border-color;
     display: block;
     height: $dot-size;
@@ -50,11 +63,6 @@ $separator-space-bottom: 3rem;
     animation: separator-width 1s ease-out forwards;
 }
 
-#bold
-{
-    font-weight: bold;
-}
-
 .container-fluid
 {
     padding-left: 2rem;
@@ -62,14 +70,14 @@ $separator-space-bottom: 3rem;
 
 .container-fluid a
 {
-    font-size: 1.3rem;
-    color: white;
+    font-size: $subtitle-font-size;
+    color: $main-text-color;
     text-decoration: none;
 }
 
 #archive
 {
-    color: #fcd538;
+    color: $separator-border-color;
     margin-top: 3rem;
 }
 
@@ -80,7 +88,7 @@ $separator-space-bottom: 3rem;
 
 .tasks p, .documents p
 {
-    font-size: 1.3rem;
+    font-size: $subtitle-font-size;
 }
 
 .tasks span
@@ -94,19 +102,29 @@ $separator-space-bottom: 3rem;
     margin-top: 1rem;
 }
 
+.documents
+{
+    padding-bottom: 3rem;
+}
+
 .documents ol
 {
-    color: #fcd538;
-    font-size: 1.8rem;
+    color: $separator-border-color;
+    font-size: $subtitle-font-size;
     font-style: italic;
     font-family: Georgia;
 }
 
+.documents ol > li
+{
+    margin-top: 2.2rem;
+}
+
 .documents ol > li > a
 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-style: normal;
-    line-height: 4rem;
+    font-family: "Segoe UI";
 }
 
 #wrapper

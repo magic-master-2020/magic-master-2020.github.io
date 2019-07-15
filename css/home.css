@@ -4,10 +4,18 @@ body {
   background-color: #333333;
 }
 
+.humble {
+  padding-top: 3rem;
+  border: none;
+  border-bottom: 3px solid #888888;
+  width: 80%;
+  margin: auto;
+}
+
 .title {
   font-size: 2rem;
-  text-align: center;
   line-height: 3rem;
+  text-align: center;
 }
 
 .separator {
@@ -31,16 +39,12 @@ body {
   animation: separator-width 1s ease-out forwards;
 }
 
-#bold {
-  font-weight: bold;
-}
-
 .container-fluid {
   padding-left: 2rem;
 }
 
 .container-fluid a {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: white;
   text-decoration: none;
 }
@@ -55,7 +59,7 @@ body {
 }
 
 .tasks p, .documents p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .tasks span {
@@ -67,17 +71,25 @@ body {
   margin-top: 1rem;
 }
 
+.documents {
+  padding-bottom: 3rem;
+}
+
 .documents ol {
   color: #fcd538;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-style: italic;
   font-family: Georgia;
 }
 
+.documents ol > li {
+  margin-top: 2.2rem;
+}
+
 .documents ol > li > a {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-style: normal;
-  line-height: 4rem;
+  font-family: "Segoe UI";
 }
 
 #wrapper {
