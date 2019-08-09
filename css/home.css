@@ -28,10 +28,12 @@ body {
   0% {
     width: 0;
   }
+
   100% {
     width: 100%;
   }
 }
+
 .separator--dotter {
   border: 0;
   border-bottom: 4px dotted #fcd538;
@@ -54,11 +56,13 @@ body {
   margin-top: 3rem;
 }
 
-.tasks, .documents {
+.tasks,
+.documents {
   padding-top: 3rem;
 }
 
-.tasks p, .documents p {
+.tasks p,
+.documents p {
   font-size: 1.4rem;
 }
 
@@ -82,11 +86,11 @@ body {
   font-family: Georgia;
 }
 
-.documents ol > li {
+.documents ol>li {
   margin-top: 2.2rem;
 }
 
-.documents ol > li > a {
+.documents ol>li>a {
   font-size: 1.2rem;
   font-style: normal;
   font-family: "Segoe UI";
@@ -112,5 +116,3 @@ body {
   padding: 2rem;
   background-color: #434b56;
 }
-
-/*# sourceMappingURL=home.css.map */
